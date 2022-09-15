@@ -277,13 +277,6 @@ select {
   margin-bottom: 12vh;
 }
 
-.ctrl-choose li button:active {
-  color: white;
-  background-color: #4c93db;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
 .ctrl-choose #gold button {
   background: #f4e9d3;
   border: 2px solid #f7d796;

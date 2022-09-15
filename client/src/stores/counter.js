@@ -13,14 +13,24 @@ export const appleStore = defineStore("counter", {
     capacity: "128GB",
     iPhoneId: 0,
     myOrder: [],
-    oneIphone: ''
+    oneIphone: '',
+    styleCapacity: false,
+    styleColor: false
   }),
 
   getters: {},
-
   actions: {
     changePage(page) {
       this.router.push(`/${page}`);
+      this.styleCapacity = false
+      this.styleColor = false
+    },
+    holdButton(state) {
+      if (!state) {
+        this.styleCapacity = true
+      } else {
+        this.styleColor = true
+      }
     },
     login() {
       axios({
