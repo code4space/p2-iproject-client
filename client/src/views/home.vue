@@ -8,14 +8,14 @@ export default {
       "logOut",
       "fetchIphone",
       "changePageToOrder",
-      'getIphoneId',
-      'fetchMyOrder',
-      'getOneIphone'
+      "getIphoneId",
+      "fetchMyOrder",
+      "getOneIphone",
     ]),
   },
   computed: {
     ...mapWritableState(appleStore, ["isLogin", "iPhone"]),
-  }
+  },
 };
 </script>
 <template>
@@ -24,27 +24,35 @@ export default {
     <h3>{{ el.title }}</h3>
     <p>{{ el.description }}</p>
     <img :src="el.imgUrl" alt="" id="phone" />
-    <a href="" @click.prevent="changePageToOrder(), getIphoneId(el.id), getOneIphone(el.id)">Pre-order ></a>
+    <a
+      href=""
+      @click.prevent="
+        changePageToOrder(), getIphoneId(el.id), getOneIphone(el.id)
+      "
+      >Pre-order ></a
+    >
   </div>
-  <div class="end">
-    <h1>lorem ipsum</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim debitis
-      nihil, eaque velit atque exercitationem soluta numquam corporis placeat
-      autem quisquam modi repellendus ipsum rerum laborum, inventore asperiores.
-      Obcaecati, fugiat esse ducimus dicta autem vel iusto cupiditate corrupti
-      accusantium, impedit sunt error repudiandae consequuntur? Aspernatur velit
-      nostrum at nesciunt mollitia provident. Eum adipisci consequuntur omnis
-      minus nostrum unde iste repudiandae porro ducimus. Cumque, esse
-      perferendis incidunt similique perspiciatis sequi soluta omnis corporis
-      consequatur officiis, enim facilis et fugit, vitae aliquam eius eaque odit
-      eveniet quidem quo recusandae fugiat. Omnis officiis nulla recusandae
-      reprehenderit a! Sint possimus impedit ratione magnam? Dicta, veniam
-      sequi. Sunt maxime alias obcaecati placeat optio tenetur, mollitia eos
-      beatae totam repudiandae, adipisci voluptas vero. Ex et, corporis aut hic,
-      laborum placeat optio expedita quo facere totam ipsum distinctio. Mollitia
-      voluptatibus, ipsa ex iste architecto beatae consequuntur ullam dolore,
-      quos magnam fuga earum vitae aliquid aspernatur veritatis atque.
-    </p>
+  <div class="footer">
+    <div>
+      <h3>ABOUT ME</h3>
+      
+      <P
+        >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam sunt quod in alias magnam, vero beatae repudiandae consequatur omnis qui. Natus autem voluptas dolore nobis, quidem officiis recusandae id alias ipsa ea necessitatibus magni, adipisci animi delectus deserunt sapiente quis deleniti, obcaecati ducimus voluptatum? Iusto cupiditate facilis aliquam totam necessitatibus.</P
+      >
+    </div>
+    <div class="useful-link">
+      <h3>USEFUL LINKS</h3>
+      <a href="" @click.prevent="changePage('')">Home</a>
+      <a href="" @click.prevent="changePageToOrder">Your Order</a>
+      <a href="" @click.prevent="changePage('')">Help</a>
+    </div>
+    <div class="contact">
+      <h3>CONTACT</h3>
+      
+      <p><i class="fa-solid fa-envelope"></i>mauritius.william.wijaya1@gmail.com</p>
+      <p><i class="fa-solid fa-mobile-screen-button"></i> +01 234 567 88</p>
+      <p><i class="fa-solid fa-phone"></i>+01 234 567 88</p>
+    </div>
+    <div></div>
   </div>
 </template>

@@ -3,8 +3,8 @@ import axios from "axios";
 
 export const appleStore = defineStore("counter", {
   state: () => ({
-    baseUrl: "https://applu-iproject.herokuapp.com",
-    // baseUrl: "http://localhost:3000",
+    // baseUrl: "https://applu-iproject.herokuapp.com",
+    baseUrl: "http://localhost:3000",
     isLogin: false,
     email: "",
     password: "",
