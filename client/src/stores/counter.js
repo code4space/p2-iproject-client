@@ -32,6 +32,24 @@ export const appleStore = defineStore("counter", {
         this.styleColor = true
       }
     },
+    generateRandomPassword() {
+      axios({
+        method: "GET",
+        url: "https://passwordinator.herokuapp.com"
+      })
+      .then(data => {
+        this.password = data.data.data
+        console.log(this.password)
+      })
+      .catch((err) => {
+        Swal.fire({
+          title: `ERROR`,
+          text: `${err.message}`,
+          icon: "error",
+          confirmButtonText: "OK",
+        });
+      });
+    },
     login() {
       axios({
         method: "POST",

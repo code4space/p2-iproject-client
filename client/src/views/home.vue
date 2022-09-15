@@ -37,7 +37,7 @@ export default {
       <h3>ABOUT ME</h3>
       
       <P
-        >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam sunt quod in alias magnam, vero beatae repudiandae consequatur omnis qui. Natus autem voluptas dolore nobis, quidem officiis recusandae id alias ipsa ea necessitatibus magni, adipisci animi delectus deserunt sapiente quis deleniti, obcaecati ducimus voluptatum? Iusto cupiditate facilis aliquam totam necessitatibus.</P
+        >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam sunt quod in alias magnam, vero beatae repudiandae consequatur omnis qui. Natus autem voluptas dolore nobis, quidem officiis recusandae id alias ipsa ea necessitatibus magni, adipisci animi delectus deserunt sapiente quis deleniti, obcaecati ducimus voluptatum?</P
       >
     </div>
     <div class="useful-link">
